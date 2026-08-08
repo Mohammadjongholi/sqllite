@@ -1,0 +1,12 @@
+services:
+  sqlite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sqlite
+    restart: unless-stopped
+    volumes:
+      - sqlite_data:/data
+
+volumes:
+  sqlite_data:
