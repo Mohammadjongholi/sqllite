@@ -12,15 +12,17 @@ SQLite database running in an Alpine Linux container.
 
 ## Usage
 
-Start the container:
+### Start the container
 
-```bash
 podman compose up -d
 
-Check the container:
+
+### Check the container
 
 podman ps
 
-Access SQLite:
+
+
+###Access SQLite
 
 podman exec -it sqlite sqlite3 /data/database.db
